@@ -48,11 +48,11 @@ def get_name(request):
 	else:
 		form = CreateListForm()
 
-	return render(request, "main/create.html", {"form": form})
+	return render(request, "create.html", {"form": form})
 
 
 def home(request):
-	return render(request, "main/home.html", {})
+	return render(request, "register/home.html", {})
 
 
 def view(request):

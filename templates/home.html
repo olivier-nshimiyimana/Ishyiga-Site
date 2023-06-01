@@ -1,0 +1,795 @@
+{% load static %}
+<!DOCTYPE html>
+<html>
+
+<head>
+  <!-- Basic -->
+  <meta charset="utf-8" />
+  <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+  <!-- Mobile Metas -->
+  <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no" />
+  <!-- Site Metas -->
+  <meta name="keywords" content="" />
+  <meta name="description" content="" />
+  <meta name="author" content="" />
+  {% csrf_token %}
+  <title>Algorithm</title>
+
+  <!-- slider stylesheet -->
+  <!-- slider stylesheet -->
+
+ 
+  <link rel="stylesheet" type="text/css"
+    href="https://cdnjs.cloudflare.com/ajax/libs/OwlCarousel2/2.3.4/assets/owl.carousel.min.css" />
+
+  <!-- bootstrap core css -->
+  <link rel="stylesheet" type="text/css" href="{% static 'css/bootstrap.css' %}" />
+ 
+  <!-- fonts style -->
+  <link href="https://fonts.googleapis.com/css?family=Roboto:400,700&display=swap" rel="stylesheet" />
+  <!-- Custom styles for this template -->
+  <link href="{% static 'css/style.css' %}" rel="stylesheet" />
+  <!-- responsive style -->
+  <link rel="stylesheet" type="text/css" href=" {% static 'https://cdnjs.cloudflare.com/ajax/libs/OwlCarousel2/2.3.4/assets/owl.carousel.min.css' %}" />
+  <script src="{% static 'js/jquery-3.4.1.min.js' %}"></script>
+<script src="{% static 'js/bootstrap.js' %}"></script>
+<script src="{% static 'https://cdnjs.cloudflare.com/ajax/libs/OwlCarousel2/2.3.4/owl.carousel.min.js' %}"></script>
+
+
+  <link href="{% static 'css/responsive.css' %}" rel="stylesheet" />
+</head>
+
+<body>
+  <div class="hero_area">
+    <!-- header section strats -->
+    <header class="header_section">
+      <div class="container-fluid">
+        <nav class="navbar navbar-expand-lg custom_nav-container ">
+          <a class="navbar-brand" href="index.html">
+            <span>
+              Algorithm Inc
+            </span>
+          </a>
+          <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarSupportedContent"
+            aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
+            <span class="navbar-toggler-icon"></span>
+          </button>
+
+          <div class="collapse navbar-collapse" id="navbarSupportedContent">
+            <div class="d-flex ml-auto flex-column flex-lg-row align-items-center">
+              <ul class="navbar-nav  ">
+                <li class="nav-item active">
+                  <a class="nav-link" href="index.html">Home <span class="sr-only">(current)</span></a>
+                </li>
+                <li class="nav-item ">
+                  <a class="nav-link" href="about.html"> Products </a>
+                </li>
+                <li class="nav-item">
+                  <a class="nav-link" href="how.html"> Events </a>
+                </li>
+              
+                <li class="nav-item">
+                  <a class="nav-link" href="#"> CUSTOMERS</a>
+                </li>
+                
+              </ul>
+              <div class="user_option">
+                <form class="form-inline my-2 my-lg-0 ml-0 ml-lg-4 mb-3 mb-lg-0">
+                  <button class="btn  my-2 my-sm-0 nav_search-btn" type="submit"></button>
+                </form>
+              </div>
+            </div>
+          </div>
+        </nav>
+      </div>
+    </header>
+    <!-- end header section -->
+    <!-- slider section -->
+    <section class=" slider_section position-relative">
+      <div id="carouselExampleIndicators" class="carousel slide" data-ride="carousel">
+        <ol class="carousel-indicators">
+          <li data-target="#carouselExampleIndicators" data-slide-to="0" class="active"></li>
+          <li data-target="#carouselExampleIndicators" data-slide-to="1"></li>
+          <li data-target="#carouselExampleIndicators" data-slide-to="2"></li>
+          <li data-target="#carouselExampleIndicators" data-slide-to="3"></li>
+          <li data-target="#carouselExampleIndicators" data-slide-to="4"></li>
+        </ol>
+        <div class="carousel-inner">
+          <div class="carousel-item active">
+            <div class="container">
+              <div class="box">
+                <div class="row">
+                  <div class="col-md-7">
+                    <div class="detail-box">
+                      <div>
+                        <h1>
+                          Ishyiga Software
+                        </h1>
+                        <h2>
+                          Ishyiga is a TradeMark of Algorithm.
+                        </h2>
+                        <div class="">
+                          <a href="">
+                            Get Started
+                          </a>
+                        </div>
+                      </div>
+                    </div>
+                  </div>
+                  <div class="col-md-5">
+                    <div class="img-box">
+                      <img src="{% static 'images/niki.png' %}" alt="" />
+                    </div>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+          <div class="carousel-item">
+            <div class="container">
+              <div class="box">
+                <div class="row">
+                  <div class="col-md-7">
+                    <div class="detail-box">
+                      <div>
+                        <h1>
+                          ERP
+                        </h1>
+                        <h2>
+                          ERP (Enterprise Resource Planning)
+                        </h2>
+                        <div class="">
+                          <a href="">
+                          Explore
+                          </a>
+                        </div>
+                      </div>
+                    </div>
+                  </div>
+                  <div class="col-md-5">
+                    <div class="img-box">
+                      <img src="{% static 'images/niki.png' %}" alt="" />
+                    </div>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+          <div class="carousel-item">
+            <div class="container">
+              <div class="box">
+                <div class="row">
+                  <div class="col-md-7">
+                    <div class="detail-box">
+                      <div>
+                        <h1>
+                        POS (POINT OF SALE)
+                        </h1>
+                        <h2>
+                          POS CMD&CAISSE
+                        </h2>
+                        <div class="">
+                          <a href="">
+                          Explore
+                          </a>
+                        </div>
+                      </div>
+                    </div>
+                  </div>
+                  <div class="col-md-5">
+                    <div class="img-box">
+                      <img src="{% static 'images/niki.png' %}" alt="" />
+                    </div>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+          <div class="carousel-item">
+            <div class="container">
+              <div class="box">
+                <div class="row">
+                  <div class="col-md-7">
+                    <div class="detail-box">
+                      <div>
+                        <h1>
+                          COMPTA
+                        </h1>
+                        <h2>
+                          The TRANSACTION
+                        </h2>
+                        <div class="">
+                          <a href="">
+                          Explore
+                          </a>
+                        </div>
+                      </div>
+                    </div>
+                  </div>
+                  <div class="col-md-5">
+                    <div class="img-box">
+                      <img src="{% static 'images/niki.png' %}" alt="" />
+                    </div>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+          <div class="carousel-item">
+            <div class="container">
+              <div class="box">
+                <div class="row">
+                  <div class="col-md-7">
+                    <div class="detail-box">
+                      <div>
+                        <h1>
+                          ISHYIGA LIVE
+                        </h1>
+                        <h2>
+                          CONTROL.
+                        </h2>
+                        <div class="">
+                          <a href="">
+                            Get Started
+                          </a>
+                        </div>
+                      </div>
+                    </div>
+                  </div>
+                  <div class="col-md-5">
+                    <div class="img-box">
+                      <img src="{% static 'images/niki.png' %}" alt="" />
+                    </div>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+    <!-- end slider section -->
+  </div>
+
+  <!-- how section -->
+  <section class="how_section layout_padding">
+    <div class="heading_container">
+      <h2>
+       OUR PRODUCTS 
+      </h2>
+    </div>
+    <div class="how_container">
+      <div class="box">
+        <div class="img-box">
+          <svg xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" version="1.1" id="Capa_1"
+            x="0px" y="0px" viewBox="0 0 512 512" style="enable-background:new 0 0 512 512;" xml:space="preserve"
+            width="512" height="512">
+            <g>
+              <img src="{% static 'images/ERP_maingate.png' %}" alt="" />
+            </g>
+          </svg>
+        </div>
+        <div class="detail-box">
+          <h5>
+            ERP (Enterprise Resource Planning)
+          </h5>
+          <p>
+            ISHYIGA ERP is an application that is used in selling and in stock management, each part (SALES & STOCK) is composed of many features that interact together on the same central data.
+            This was built for the purpose of being used by big companies (companies that might supply other companies).
+            This is the combination of technology processes and procedures that oversee the monitoring and maintenance of stocked products, with the ability of generating reports,
+            maintaining the balance of the stock, and other more details about the purchased products and sales in the organization.
+          </p>
+        </div>
+      </div>
+      <div class="box">
+        <div class="img-box">
+          <svg id="Capa_1" enable-background="new 0 0 510 510" height="512" viewBox="0 0 510 510" width="512"
+            xmlns="http://www.w3.org/2000/svg">
+            <img src="{% static 'images/akamin.png' %}" alt="" />
+          </svg>
+        </div>
+        <div class="detail-box">
+          <h5>
+            NIKI
+
+          </h5>
+          <p>
+            NIKI is a web based system of ISHYIGA which was built with the aim of facilitating businesses (Hotels, Bar Resto, SuperMarkets, Pharmacies and other different businesses ) to have a global identification of the item/product. 
+            Meaning, Items are created by following the required details of the item. (for example, when an item is being created it must have the Item commercial description, Item category, Manufacture, Business sector and other more required details). 
+            This adds to the fact that clients who want good and full detailed reports with enough information of the items, this system is sufficiently good for them.
+            NIKI is integrated in all ISHYIGA systems to pull the items in a stock.
+          </p>
+        </div>
+      </div>
+      <div class="box">
+        <div class="img-box">
+          <svg height="480pt" viewBox="0 -40 480 479" width="480pt" xmlns="http://www.w3.org/2000/svg">
+            <img src="{% static 'images/vsdc.png' %}" alt="" />
+          </svg>
+        </div>
+        <div class="detail-box">
+          <h5>
+          VSDC
+          </h5>
+          <p>
+            This system contributes many features, including the following:
+
+            Internal control mechanismS
+            Inventory management toolS
+            Essential basis for accountingS
+            Transparent mechanism in business
+            Transparent means of exchange of informationS
+            Financial tax audit
+            Insurance for security informing taxpayers
+            Clearinghouse for information in real time between taxpayer and tax administrator
+          </p>
+        </div>
+      </div>
+      {% comment %} <div class="box">
+        <div class="img-box">
+          <svg viewBox="0 0 512 512" xmlns="http://www.w3.org/2000/svg">
+            <path
+              d="m336 336c-5.519531 0-10 4.480469-10 10s4.480469 10 10 10 10-4.480469 10-10-4.480469-10-10-10zm0 0" />
+            <path
+              d="m200 326c-5.515625 0-10-4.484375-10-10s4.484375-10 10-10c3.542969 0 7.28125 1.808594 10.816406 5.226562 3.96875 3.839844 10.300782 3.738282 14.140625-.234374 3.839844-3.96875 3.734375-10.296876-.234375-14.136719-5.074218-4.914063-10.152344-7.691407-14.722656-9.207031v-11.648438c0-5.523438-4.476562-10-10-10s-10 4.476562-10 10v11.71875c-11.640625 4.128906-20 15.246094-20 28.28125 0 16.542969 13.457031 30 30 30 5.511719 0 10 4.484375 10 10s-4.488281 10-10 10c-4.273438 0-8.886719-2.6875-12.988281-7.566406-3.550781-4.226563-9.859375-4.773438-14.085938-1.21875-4.230469 3.554687-4.773437 9.863281-1.222656 14.089844 5.347656 6.359374 11.632813 10.789062 18.296875 13.023437v11.671875c0 5.523438 4.476562 10 10 10s10-4.476562 10-10v-11.71875c11.636719-4.128906 20-15.246094 20-28.28125 0-16.542969-13.457031-30-30-30zm0 0" />
+            <path
+              d="m120 166c5.523438 0 10-4.476562 10-10v-40c0-5.523438-4.476562-10-10-10s-10 4.476562-10 10v40c0 5.523438 4.476562 10 10 10zm0 0" />
+            <path
+              d="m472 236v-80c0-27.570312-22.429688-50-50-50h-56v-76c0-16.542969-13.457031-30-30-30h-186c-16.542969 0-30 13.457031-30 30v36h-30c-16.542969 0-30 13.457031-30 30v10h-10c-27.570312 0-50 22.429688-50 50v306c0 27.570312 22.429688 50 50 50h306c24.144531 0 44.347656-17.203125 48.992188-40h17.007812c27.570312 0 50-22.429688 50-50v-26h10c16.542969 0 30-13.457031 30-30v-90c0-22.054688-17.945312-40-40-40zm20 40c0 11.046875-8.953125 20-20 20v-40c11.027344 0 20 8.972656 20 20zm-70-150c16.542969 0 30 13.457031 30 30v140h-46v-60c0-24.144531-17.203125-44.347656-40-48.992188v-61.007812zm-282-96c0-5.515625 4.484375-10 10-10h186c5.515625 0 10 4.484375 10 10v156h-46v-90c0-16.542969-13.457031-30-30-30h-130zm100 156v-100h30c5.515625 0 10 4.484375 10 10v90zm-60 0v-100h40v100zm-100-90c0-5.515625 4.484375-10 10-10h70v100h-80zm-30 30h10v60h-7.859375c-16.527344 0-32.140625-11.96875-32.140625-30 0-16.542969 13.457031-30 30-30zm306 366h-306c-16.542969 0-30-13.457031-30-30v-266.617188c8.941406 6.660157 20.171875 10.617188 32.140625 10.617188h303.859375c16.542969 0 30 13.457031 30 30v60h-70c-16.542969 0-30 13.457031-30 30v40c0 16.542969 13.457031 30 30 30h70v66c0 16.542969-13.457031 30-30 30zm96-70c0 16.542969-13.457031 30-30 30h-16v-56h46zm30-46h-166c-5.515625 0-10-4.484375-10-10v-40c0-5.515625 4.484375-10 10-10h156c7.136719 0 13.984375-1.867188 20-5.355469v55.355469c0 5.515625-4.484375 10-10 10zm0 0" />
+            <path
+              d="m422 336h-46c-5.523438 0-10 4.476562-10 10s4.476562 10 10 10h46c5.523438 0 10-4.476562 10-10s-4.476562-10-10-10zm0 0" />
+          </svg>
+        </div>
+        <div class="detail-box">
+          <h5>
+            LIVE
+          </h5>
+          <p>
+            sio kama napenda muziki wa africa
+            yahoo boyz ain't kidding anymore
+          </p>
+        </div> {% endcomment %}
+      </div>
+    </div>
+    <div class="btn-box">
+      <a href="">
+        Read More
+      </a>
+    </div>
+  </section>
+  <!-- end how section -->
+
+  <!-- about section -->
+
+  <section class="about_section layout_padding-bottom">
+    <div class="container">
+      <div class="heading_container">
+        <h2>
+          Algorithm Inc Team
+        </h2>
+      </div>
+       <div class="box">
+        <div class="img-box">
+          <img src="{% static 'images/algoteam.JPEG' %}" alt="">
+        </div>
+        <div class="detail-box">
+          <p>
+            <br>
+            <h3>"Bringing Talent Together: Meet the Brains Behind Our Success!"</h3>   
+            Introducing the dynamic force behind our success - our exceptional team! With diverse backgrounds,
+            unique skill sets, and a shared passion for excellence, we come together to create remarkable experiences.
+            Each member brings a wealth of expertise and an unwavering commitment to delivering outstanding results. 
+          </p>
+          <div class="btn-box">
+            <a href="">
+              Read More
+            </a>
+          </div>
+        </div>
+      </div>
+    </div>
+
+    
+  </section>
+  <section class="about_section layout_padding-bottom">
+    <div class="container">
+      <div class="heading_container">
+        <h2>
+          About Ishyiga
+        </h2>
+      </div>
+       <div class="box">
+        <div class="img-box">
+          <img src="{% static 'images/logo-company.png' %}" alt="">
+        </div>
+        <div class="detail-box">
+          <p>
+            I've been living fast life but i am see it in slow motion and you see my lifestyle i got GS in troubles!
+              I see many people outside are feeling my zobos
+              Standing defend like algorithm eeeeeeeeeeeehhhhhhhh band guy want to flex and chill
+
+              I've been living fast life but i am see it in slow motion and you see my lifestyle i got GS in troubles!
+              I see many people outside are feeling my zobos
+              Standing defend like algorithm eeeeeeeeeeeehhhhhhhh band guy want to flex and chill
+          </p>
+          <div class="btn-box">
+            <a href="">
+              Read More
+            </a>
+          </div>
+        </div>
+      </div>
+    </div>
+
+    
+  </section>
+  <section class="about_section layout_padding-bottom">
+    <div class="container">
+      <div class="heading_container">
+        <h2>
+          About Ishyiga
+        </h2>
+      </div>
+       <div class="box">
+        <div class="img-box">
+          <img src="{% static 'images/logo-company.png' %}" alt="">
+        </div>
+        <div class="detail-box">
+          <p>
+            I've been living fast life but i am see it in slow motion and you see my lifestyle i got GS in troubles!
+              I see many people outside are feeling my zobos
+              Standing defend like algorithm eeeeeeeeeeeehhhhhhhh band guy want to flex and chill
+
+              I've been living fast life but i am see it in slow motion and you see my lifestyle i got GS in troubles!
+              I see many people outside are feeling my zobos
+              Standing defend like algorithm eeeeeeeeeeeehhhhhhhh band guy want to flex and chill
+          </p>
+          <div class="btn-box">
+            <a href="">
+              Read More
+            </a>
+          </div>
+        </div>
+      </div>
+    </div>
+
+    
+  </section>
+  <section class="about_section layout_padding-bottom">
+    <div class="container">
+      <div class="heading_container">
+        <h2>
+          About Ishyiga
+        </h2>
+      </div>
+       <div class="box">
+        <div class="img-box">
+          <img src="{% static 'images/logo-company.png' %}" alt="">
+        </div>
+        <div class="detail-box">
+          <p>
+            I've been living fast life but i am see it in slow motion and you see my lifestyle i got GS in troubles!
+              I see many people outside are feeling my zobos
+              Standing defend like algorithm eeeeeeeeeeeehhhhhhhh band guy want to flex and chill
+
+              I've been living fast life but i am see it in slow motion and you see my lifestyle i got GS in troubles!
+              I see many people outside are feeling my zobos
+              Standing defend like algorithm eeeeeeeeeeeehhhhhhhh band guy want to flex and chill
+          </p>
+          <div class="btn-box">
+            <a href="">
+              Read More
+            </a>
+          </div>
+        </div>
+      </div>
+    </div>
+
+    
+  </section>
+  <!-- end about section -->
+
+  <!-- app section -->
+{% comment %} 
+<section class="app_section">
+    <div class="container">
+      <div class="row">
+        <div class="col-md-6">
+          <div class="detail-box">
+            <h2>
+              ikiz nuko ntazawufata
+            </h2>
+            <p>
+              I've been living fast life but i am see it in slow motion and you see my lifestyle i got GS in troubles!
+              I see many people outside are feeling my zobos
+              Standing defend like algorithm eeeeeeeeeeeehhhhhhhh band guy want to flex and chill
+            </p>
+            <div class="download_box">
+              <h5>
+               yimanure ahaa!
+              </h5>
+              <div class="btn-box">
+                <a href="">
+                  <img src="{% static 'images/app-store.png' %}" alt="">
+                </a>
+                <a href="">
+                  <img src="{% static 'images/play-store.png' %}" alt="">
+                </a>
+              </div>
+            </div>
+          </div>
+        </div> 
+        <div class="col-md-6">
+          <div class="img-box">
+            <img src="{% static 'images/pos-min.png' %}" alt="">
+          </div>
+        </div>
+      </div>
+    </div>
+  </section> {% endcomment %}
+
+  <!-- end app section -->
+
+
+  <!-- auto section -->
+{% comment %} 
+  <section class="auto_section layout_padding">
+    <div class="container">
+      <div class="heading_container">
+        <h2>
+          Start Explore ishyiga
+        </h2>
+      </div>
+      <div class="box">
+        <div class="img-box">
+          <img src="{% static 'images/viva.gif' %}" alt="">
+        </div>
+        <div class="detail-box">
+          <p>
+            I've been living fast life but i am see it in slow motion and you see my lifestyle i got GS in troubles!
+              I see many people outside are feeling my zobos
+              Standing defend like algorithm eeeeeeeeeeeehhhhhhhh band guy want to flex and chill
+          </p>
+          <div class="btn-box">
+            <a href="">
+              Register Now
+            </a>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section> {% endcomment %}
+  <!-- end auto section -->
+
+  <!-- client section -->
+
+  <section class="client_section layout_padding-bottom">
+    <div class="container">
+      <div class="heading_container">
+        <h2>
+          Testimonial
+        </h2>
+      </div>
+      <div class="box">
+        <div class="b-1">
+          <div class="client_id">
+            <div class="img-box">
+              <a href="https://www.youtube.com/watch?v=aRRe_DYqPC4&ab_channel=AimableKimenyi" target="_blank">
+                <img src="{% static 'images/fuu testm.png' %}" alt=""></a>
+            </div>
+            <div class="name">
+              <h5>
+              OUR clients rates US
+              </h5>
+              <h6>
+                &#x2B50
+                &#x2B50
+                &#x2B50
+                &#x2B50
+              </h6>
+            </div>
+          </div>
+        </div>
+        <div class="client_detail">
+          <p>
+            I've been using ishyiga since 2009, and i found that it is Good Software you can use to monitor your service
+            as a good solution to big and small Enterprises that are currently working in Rwanda and oversees 
+          </p>
+        </div>
+      </div>
+      <div class="box">
+        <div class="client_id">
+          <div class="img-box">
+            <a href="https://www.youtube.com/watch?v=PO0OEvWNGBY&ab_channel=AimableKimenyi" target="_blank">
+            <img src="{% static 'images/suu testm.png' %}" alt=""></a>
+          </div>
+          <div class="name">
+            <h5>
+              Client's Testimony
+            </h5>
+            <h6>
+              &#128079
+              &#128079
+              &#128079
+              &#128079
+            </h6>
+          </div>
+        </div>
+        <div class="client_detail">
+          <p>
+            natangiye gukoresha ishyiga nyuma yo kubura uburyo nzajya menya ibyinjiye n'ibyasohotse muri stock yange 
+            rimwe na rimwe abakozi bakanyiba nkabura uko mbigenza ariko aho natangiye gukorana n'Ishyiga ubu business yange iragenda 
+            neza nkaba nshimira cyane uburyo Ishyiga ridufasha muri businessyange.
+          </p>
+        </div>
+      </div>
+      <div class="btn-box">
+        <a href="">
+          Read More
+        </a>
+      </div>
+    </div>
+  </section>
+
+
+  <!-- end client section -->
+
+  <!-- info section -->
+  <section class="info_section layout_padding">
+    <div class="container">
+      <div class="row">
+        <div class="col-md-3">
+          <div class="info_contact">
+            <div class="info_logo">
+              <a href="index.html">
+                <span>
+                  Algorithm
+                </span>
+              </a>
+            </div>
+            <h5>
+              Contact Us
+            </h5>
+            <div>
+              <div class="img-box">
+                <img src="{% static 'images/location.png' %}" width="18px" alt="" />
+              </div>
+              <p>
+                Kimihurura/rugando
+              </p>
+            </div>
+            <div>
+              <div class="img-box">
+                <img src="{% static 'images/phone.png' %}" width="18px" alt="" />
+              </div>
+              <p>
+                +250 788 000 000
+              </p>
+            </div>
+            <div>
+              <div class="img-box">
+                <img src="{% static 'images/envelope.png' %}" width="18px" alt="" />
+              </div>
+              <p>
+                algo@Ishyiga.net
+              </p>
+            </div>
+          </div>
+        </div>
+        <div class="col-md-3">
+          <div class="info_info">
+            <h5>
+              THINGS TO CONSIDER
+            </h5>
+            <p>
+              I've been living fast life but i am see it in slow motion and you see my lifestyle i got GS in troubles!
+              I see many people outside are feeling my zobos
+              Standing defend like algorithm eeeeeeeeeeeehhhhhhhh band guy want to flex and chill 
+
+            </p>
+          </div>
+        </div>
+
+        <div class="col-md-3">
+          <div class="info_links">
+            <h5>
+              Useful Links
+            </h5>
+            <ul>
+              <li>
+                <a href="">
+                  Ishyiga
+                </a>
+              </li>
+              <li>
+                <a href="">
+                  is
+                </a>
+              </li>
+              <li>
+                <a href="">
+                  here
+                </a>
+              </li>
+              <li>
+                <a href="">
+                 to simplify
+                </a>
+              </li>
+              <li>
+                <a href="">
+                  your work
+                </a>
+              </li>
+              <li>
+                <a href="">
+                 through
+                </a>
+              </li>
+              <li>
+                <a href="">
+                  technology
+                </a>
+              </li>
+            </ul>
+          </div>
+        </div>
+        <div class="col-md-3">
+          <div class="info_form ">
+            <h5>
+             Email Us
+            </h5>
+            <form action="">
+              <input type="email" placeholder="Enter your email" />
+              <button>
+                Subscribe
+              </button>
+            </form>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- end info_section -->
+
+  <!-- footer section -->
+  <section class="container-fluid footer_section">
+    <p>
+      &copy; 2023 All Rights Reserved By
+      <a href="https://html.design/">Algorithm Inc</a>
+    </p>
+  </section>
+  <!-- footer section -->
+<script>
+  <script src="{% static 'js/bootstrap.js' %}"></script>
+  <script type="text/javascript" src="% static 'js/jquery-3.4.1.min.js' %}"></script>
+  <script type="text/javascript" src="% static 'js/bootstrap.js' %}"></script>
+  <script type="text/javascript" src="% static 'https://cdnjs.cloudflare.com/ajax/libs/OwlCarousel2/2.3.4/owl.carousel.min.js' %}">
+  </script>
+  <!-- owl carousel script 
+    -->
+  <script type="text/javascript">
+    $(".owl-carousel").owlCarousel({
+      loop: true,
+      margin: 0,
+      navText: [],
+      center: true,
+      autoplay: true,
+      autoplayHoverPause: true,
+      responsive: {
+        0: {
+          items: 1
+        },
+        1000: {
+          items: 3
+        }
+      }
+    });
+    
+  </script>
+  <!-- end owl carousel script -->
+  
+</body>
+
+</html>
