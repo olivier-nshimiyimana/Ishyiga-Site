@@ -1,19 +1,19 @@
 from django.shortcuts import render
 from django.http import HttpResponse
+# from django.urls import reverse
 # Create your views here.
 # from .form import ImageThumbnailForm
 
-
+def event(request):
+    return render(request, 'event',{'name':'event'})
 def home(request):
-    return render(request, 'home.html',{'name':'Bond'})
+    return render(request, 'home.html',{'name':'home'})
+def client(request):
+    return render(request, 'clients.html',{'name':'client'})
 
 
-def addition(request):
-    
-    number1 = int(request.GET['num1'])
-    number2 = int(request.GET['num2'])
-    answer = number1 + number2
-    return render(request, 'results.html',{'result':answer})
+def products(request):
+   return render(request, 'how.html',{'name':'products'})  
 
 # def imageThumbnail(request):
 #     if request.method == 'POST':

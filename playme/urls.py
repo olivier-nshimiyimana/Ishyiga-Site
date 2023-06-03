@@ -20,4 +20,7 @@ urlpatterns = [
     path('music', include('music.urls')),
     path('', include('accounts.urls')),
     path('admin/', admin.site.urls),
+    
+
+   
 ]
